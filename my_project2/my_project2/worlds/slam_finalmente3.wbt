@@ -1,0 +1,123 @@
+#VRML_SIM R2018a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.5422810446427881 -0.6147187544508775 -0.5727583448082516 4.278636482376573
+  position -2.129970086965586 16.902371926110323 5.30222000205316
+}
+Background {
+  skyColor [
+    0.4 0.7 1
+  ]
+}
+DirectionalLight {
+  ambientIntensity 1
+  direction 0.1 -0.5 0.3
+}
+RectangleArena {
+  floorSize 15 15
+  floorTileSize 2 2
+  wallHeight 4.3
+  wallTextureUrl [
+    "textures/parquetry.jpg"
+  ]
+  wallTileSize 3 3
+}
+Bed {
+  translation 6.9499999999999975 0 -3.6100000000000088
+}
+PottedTree {
+  translation -6.019999999999989 0 -6.979999999999997
+}
+Sofa {
+  translation 4.089999999999999 0 0.6200000000000002
+}
+Oven {
+  hidden position_0_0 -3.511767900846708e-24
+  hidden translation_1 0.25 -0.15013749695999973 0
+  translation 2.9600000125146795 0.34 -1.8899999574213184
+  rotation 0 0.9999999999999999 0 4.712388966
+}
+Wall {
+  translation 0.949999999856164 0 3.529999925439362
+  rotation 0 1 0 6.283185307179586
+  size 5 4.2 0.2
+  wallTextureUrl [
+    "textures/old_brick_wall.jpg"
+  ]
+  wallTileSize 3 3
+}
+PortraitPainting {
+  translation 6.159999999999992 2.285 -2.4099999999999993
+}
+Wall {
+  translation 2.570000042530746 0 -6.4600000357219916
+  rotation 0 1 0 1.5707963028204126
+  name "wall(5)"
+  size 2 4.2 0.2
+  wallTextureUrl [
+    "textures/old_brick_wall.jpg"
+  ]
+  wallTileSize 3 3
+}
+Wall {
+  translation 3.4800000011987353 0 0.49999993757045114
+  rotation 0 -1 0 4.712388985179587
+  name "wall(4)"
+  size 6 4.2 0.2
+  wallTextureUrl [
+    "textures/gray_brick_wall.jpg"
+  ]
+  wallTileSize 3 3
+}
+Wall {
+  translation -1.5099999905540469 0 -1.9700000316463149
+  rotation 0 1 0 1.5707963220000003
+  name "wall(2)"
+  size 7 4.2 0.2
+  wallTextureUrl [
+    "textures/old_brick_wall.jpg"
+  ]
+  wallTileSize 3 3
+}
+Wall {
+  translation 6.839999965284929 0.07999999999999993 3.5800000224880733
+  rotation 0 1 0 3.141592644
+  name "wall(1)"
+  size 1.4 4.1000000000000005 0.2
+  wallTextureUrl [
+    "textures/old_brick_wall.jpg"
+  ]
+  wallTileSize 3 3
+}
+Wall {
+  translation 2.9300000242621764 0.07999999999999993 -2.570000015008027
+  rotation 0 1 0 3.141592644
+  name "wall(3)"
+  size 8.9 4.1000000000000005 0.2
+  wallTextureUrl [
+    "textures/gray_brick_wall.jpg"
+  ]
+  wallTileSize 3 3
+}
+DEF MY_ROBOT Pioneer3at {
+  hidden position_0_0 3920.137471081577
+  hidden position_0_1 5039.34794729383
+  hidden position_0_2 3914.9759689487455
+  hidden position_0_3 5038.2419969781195
+  hidden rotation_4 1 0 0 0.570160598484829
+  hidden rotation_5 -0.9999999999999999 0 0 0.23333093580139316
+  hidden rotation_6 1 0 0 5.731662731316458
+  hidden rotation_7 0.9999999999999999 0 0 0.8726193799088952
+  translation -6.794014125190917 0.16000964760230935 6.123321761675113
+  rotation 0.0010311179294681383 -0.9999744440655611 0.007074461929187713 3.0231597469567597
+  controller "SLAM"
+  extensionSlot [
+    InertialUnit {
+    }
+    DEF supervisor Supervisor {
+    }
+    DEF gps GPS {
+    }
+  ]
+}
